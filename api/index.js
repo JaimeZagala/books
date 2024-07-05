@@ -19,8 +19,5 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
-app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
-app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
-
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server is running on ${process.env.NODE_ENV} on port ${port}`));
