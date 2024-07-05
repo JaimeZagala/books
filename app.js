@@ -1,0 +1,21 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const mongoose = require('./config');
+const path = require('path');
+
+const dotenv = require('dotenv');
+dotenv.config({path: 'config.env'});
+
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+const bookRoutes = require('./routes/bookRoutes');
+app.use('/api', bookRoutes);
+app.use(express.static('./public'));
+app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
+app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server is running on ${process.env.NODE_ENV} on port ${port}`));
