@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const inputPublishedDate = document.querySelector('#published-date');
 	const inputPages = document.querySelector('#pages');
 
-	const apiUrl = 'https://books-two-alpha.vercel.app/api/books';
+	const apiUrl = 'https://books-lime-gamma.vercel.app/api/books';
 
 	bookForm.addEventListener('submit', async (event) => {
 		event.preventDefault();
