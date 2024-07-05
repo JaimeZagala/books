@@ -1,22 +1,23 @@
 {
-	"name": "myapp",
-	"version": "0.0.1",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "nodemon app.js"
-	},
-	"keywords": [],
-	"author": "Jaime Zagalá Lázaro",
-	"license": "ISC",
-	"description": "Proyecto de APP con API RESTful y aplicación web utilizando Node.js y Mongoose para gestionar una colección de libros",
-	"dependencies": {
-		"body-parser": "^1.20.2",
-		"bootstrap": "^5.3.3",
-		"cors": "^2.8.5",
-		"dotenv": "^16.4.5",
-		"express": "^4.19.2",
-		"mongoose": "^8.4.4",
-		"nodemon": "^3.1.4"
-	}
+  "name": "booksapi",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "Rafael Peña Muñoz",
+  "license": "MIT",
+  "description": "API RESTful para gestionar coleccción de libros",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
