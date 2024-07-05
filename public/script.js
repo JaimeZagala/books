@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	async function loadBooks() {
 		bookList.innerHTML = '';
-		const response = await(fetch(apiUrl));
+		const response = await fetch(apiUrl);
 		const books = await response.json();
 		books.forEach(book => {
 			const card = document.createElement('div');
