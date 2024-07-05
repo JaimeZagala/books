@@ -16,7 +16,7 @@
 			"dest": "/public/index.html"
 		},
 		{
-			"src": "/api/books/(.*)",
+			"src": "/api/books(.*)",
 			"dest": "/api/index.js"
 		}
 	]
